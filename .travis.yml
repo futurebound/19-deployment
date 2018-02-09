@@ -17,7 +17,8 @@ sudo: required #need sudo so we can override some commands its gonna run
 branches: #config for our app
   only: #only want master/test_branch to recognize. if someone opens a PR to either of these, Travis CI will fire
     - master
-    - test_branch #can change these to be whatever we want, - staging or - development
+    - development #can change these to be whatever we want, - staging or - development
+    - production
   # except: #blacklist
 before_script: npm i #hey before you run any the things, run npm i
 script: #list of scripts it needs to run, in serial (-i)
