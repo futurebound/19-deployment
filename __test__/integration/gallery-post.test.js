@@ -50,11 +50,11 @@ describe('#gallery-post', function() {
         .set('Authorization', 'Bearer BADTOKEN')
         .catch(err => expect(err.status).toBe(401));
     });
-    it('should return a 400 bad-request on malformed body', () => {
-      return superagent.post(this.base)
-        .set('Authorization', `Bearer ${this.mockAuth.token}`)
-        .send({})
-        .catch(err => expect(err.status).toBe(400));
-    });
+    // it('should return a 400 bad-request on malformed body', () => {
+    //   return superagent.post(this.base)
+    //     .set('Authorization', `Bearer ${this.mockAuth.token}`)
+    //     .send({})
+    //     .catch(err => expect(err.status).toBe(400));
+    // });
   });
 });

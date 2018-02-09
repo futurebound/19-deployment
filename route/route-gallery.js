@@ -48,7 +48,7 @@ module.exports = router => {
         userId: request.user._id,
         _id: request.params._id,
       })
-        .then(/* could do some error handling here, similar to line 66 if conditional*/)
+        // .then(/* could do some error handling here, similar to line 66 if conditional*/)
         .then(gallery => {
           if (!gallery) return Promise.reject(new Error('Validation Error.'));
           return gallery.set(request.body).save();
