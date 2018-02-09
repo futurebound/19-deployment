@@ -1,5 +1,7 @@
 # Lab 19 ~ Deployment
 
+[![Build Status](https://travis-ci.org/futurebound/19-deployment.svg?branch=development)](https://travis-ci.org/futurebound/19-deployment)
+
 **Author**: Mitchell
 **Version**: 1.0.0
 
